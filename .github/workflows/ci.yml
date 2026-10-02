@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      # Runtime/Core has no engine dependency, so its tests need no Unity licence.
+      - name: Unit tests
+        run: dotnet test DotnetTests~
+
+      - name: Pool-literal lint (self-test, then the sample code)
+        run: |
+          python3 tools/check_pool_literals.py --self-test
+          python3 tools/check_pool_literals.py Samples~

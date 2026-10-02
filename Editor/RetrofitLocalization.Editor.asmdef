@@ -1,0 +1,19 @@
+{
+    "name": "RetrofitLocalization.Editor",
+    "rootNamespace": "RetrofitLocalization.Editor",
+    "references": [
+        "RetrofitLocalization.Core",
+        "RetrofitLocalization.Unity"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,42 @@
+{
+  "name": "com.alexgofman.retrofit-localization",
+  "version": "0.1.0",
+  "displayName": "Retrofit Localization",
+  "description": "Localization for a Unity project that was written in one language and is already live: string tables with reported fallbacks, in-place refresh of static string pools, a label sweep for untouched UI, plural rules, Korean particles and tag-aware Arabic shaping, plus Editor audits.",
+  "unity": "6000.0",
+  "license": "MIT",
+  "author": {
+    "name": "Alex Gofman",
+    "url": "https://github.com/alexgofman"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexgofman/unity-retrofit-localization.git"
+  },
+  "keywords": [
+    "localization",
+    "l10n",
+    "i18n",
+    "rtl",
+    "arabic",
+    "korean",
+    "plural",
+    "textmeshpro",
+    "ugui"
+  ],
+  "dependencies": {
+    "com.unity.ugui": "2.0.0"
+  },
+  "samples": [
+    {
+      "displayName": "Language Picker Demo",
+      "description": "Demo tables in five languages and a script that builds a small UI with a language picker.",
+      "path": "Samples~/LanguagePickerDemo"
+    },
+    {
+      "displayName": "RTLTMPro Shaper",
+      "description": "Adapter that plugs the RTLTMPro library in as the Arabic shaper. Needs RTLTMPro and the RETROFIT_L10N_RTLTMPRO scripting define.",
+      "path": "Samples~/RtlTmproShaper"
+    }
+  ]
+}

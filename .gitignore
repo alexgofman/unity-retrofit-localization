@@ -1,0 +1,21 @@
+# Build output of the .NET test projects
+bin/
+obj/
+TestResults/
+
+# IDE and OS files
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+
+# Unity skips folders whose names end in "~". Keep them in git even when a global "*~" rule is set.
+!DotnetTests~/
+!Samples~/

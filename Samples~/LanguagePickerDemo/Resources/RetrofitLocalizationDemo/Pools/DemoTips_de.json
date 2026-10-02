@@ -1,0 +1,12 @@
+{
+  "tips": [
+    "Übersetzungen liegen in einfachen JSON-Dateien, eine pro Sprache.",
+    "Eine fehlende Übersetzung fällt auf die Ausgangssprache zurück und wird gemeldet.",
+    "Diese Zeile stammt aus einem static-readonly-Array. Beim Umschalten wurde es an Ort und Stelle überschrieben.",
+    "Zahlen wählen die Pluralform, die die Sprache verlangt."
+  ],
+  "greetings": [
+    "Schön, dich zu sehen, {0}.",
+    "{0}, dein Arbeitsbereich ist bereit."
+  ]
+}

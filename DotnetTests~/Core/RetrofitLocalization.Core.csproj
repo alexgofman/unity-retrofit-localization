@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Builds Runtime/Core exactly the way Unity 6 does: .NET Standard 2.1 API surface, C# 9.
+    The sources are linked, not copied, so there is one copy of the code.
+  -->
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <AssemblyName>RetrofitLocalization.Core</AssemblyName>
+    <RootNamespace>RetrofitLocalization</RootNamespace>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="../../Runtime/Core/**/*.cs" LinkBase="Core" />
+  </ItemGroup>
+
+</Project>
